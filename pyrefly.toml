@@ -1,0 +1,36 @@
+# Pyrefly Configuration for MediOracle Healthcare Workforce Portal
+
+project-includes = [
+    "backend/**/*.py"
+]
+
+project-excludes = [
+    "**/node_modules",
+    "**/__pycache__",
+    "**/.venv/**",
+    "**/__pyrefly_virtual__/**",
+    "**/inmemory/**"
+]
+
+search-path = [
+    ".",
+    "backend",
+    "backend/app"
+]
+
+site-package-path = [
+    ".venv/Lib/site-packages"
+]
+
+python-platform = "win32"
+python-version = "3.11"
+python-interpreter-path = ".venv/Scripts/python.exe"
+
+[errors]
+missing-import = false
+bad-argument-type = false
+unnecessary-type-conversion = false
+bad-assignment = false
+missing-attribute = false
+parse-error = false
+unknown-name = false
